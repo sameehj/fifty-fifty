@@ -1,10 +1,12 @@
 package application.shamndar.sameeh.fiftyfifty;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,12 +20,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.parse.FindCallback;
+import com.parse.FunctionCallback;
 import com.parse.Parse;
+import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.paypal.android.sdk.payments.PayPalAuthorization;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalItem;
@@ -35,8 +41,10 @@ import com.paypal.android.sdk.payments.PayPalService;
 import org.json.JSONException;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity
@@ -45,6 +53,38 @@ public class MainActivity extends AppCompatActivity
     private static final int REQUEST_CODE_PAYMENT = 1;
     private static final int REQUEST_CODE_FUTURE_PAYMENT = 2;
     private static final int REQUEST_CODE_PROFILE_SHARING = 3;
+    private class SyncOperation extends AsyncTask<String, Void, String> {
+    private String  authorization_code;
+        ProgressDialog progressDialog;
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            // Synchronize code here
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            if (progressDialog.isShowing()) {
+                progressDialog.dismiss();
+            }
+        }
+
+        @Override
+        protected void onPreExecute() {
+            if (progressDialog == null) {
+                progressDialog = new ProgressDialog(MainActivity.this);
+                progressDialog.setMessage("Checking information..");
+                progressDialog.show();
+                progressDialog.setCanceledOnTouchOutside(false);
+                progressDialog.setCancelable(false);
+            }
+        }
+
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,8 +113,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         // Enable Local Datastore.
-        Parse.enableLocalDatastore(this);
-
+        String parse_app_id="Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk";
+        String parse_client_id="jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u";
+        Parse.initialize(this, parse_app_id, parse_client_id);
+        ParseObject zobor = new ParseObject("User");
+        zobor.saveInBackground();
 
                 // Start with mock environment.  When ready, switch to sandbox (ENVIRONMENT_SANDBOX)
                 // or live (ENVIRONMENT_PRODUCTION)
@@ -94,7 +137,20 @@ public class MainActivity extends AppCompatActivity
 
         startService(intent);
 
-        myAss();
+        final Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                myAss();
+            }
+        });
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("authorization", "EJhi9jOPswug9TDOv93qg4Y28xIlqPDpAoqd7biDLpeGCPvORHjP1Fh4CbFPgKMGCHejdDwe9w1uDWnjPCp1lkaFBjVmjvjpFtnr6z1YeBbmfZYqa9faQT_71dmgZhMIFVkbi4yO7hk0LBHXt_wtdsw");
+        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
+            @Override
+            public void done(Object response, ParseException exc) {
+                Log.e("cloud code example", "response: " + response);
+            }
+        });
     }
     private void myAss(){
 
@@ -188,7 +244,7 @@ public class MainActivity extends AppCompatActivity
             PayPalAuthorization auth = data
                     .getParcelableExtra(PayPalProfileSharingActivity.EXTRA_RESULT_AUTHORIZATION);
             if (auth != null) {
-                
+
                     String authorization_code = auth.getAuthorizationCode();
                     sendAuthorizationToServer(auth);
             }
@@ -200,7 +256,7 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    private void sendAuthorizationToServer(PayPalAuthorization authorization) {
+    private void sendAuthorizationToServer(PayPalAuthorization authorization)  {
         Log.e("zebe","bedatee");
         // TODO:
         // Send the authorization response to your server, where it can exchange the authorization code
@@ -208,6 +264,31 @@ public class MainActivity extends AppCompatActivity
         //
         // Your server must then store these tokens, so that your server code can use it
         // for getting user profile data in the future.
+        SyncOperation syncTask=new SyncOperation();
+        syncTask.execute();
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//
+//        }
+//        Boolean Success = true;
+//        if(Success) {
+//            String userEmail = "khalid.awwad3@gmail.com";
+//            syncTask.onPostExecute("GOOD!");
+//
+//        }
+//        else{
+//
+//        }
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("authorization", authorization.getAuthorizationCode());
+        Log.e("auth",authorization.getAuthorizationCode());
+        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
+            @Override
+            public void done(Object response, ParseException exc) {
+                Log.e("cloud code example", "response: " + response);
+            }
+        });
 
     }
 

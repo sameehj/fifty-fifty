@@ -8,4 +8,5 @@
     <string name="paypal_application_secret">EFXqjhqiPJzvzmmAYrFwCMNPVpHCfD_1pLr04tbjEFLcKTZtmN3zzqq-8YO3oQWDc-XtozCwmUybGaxp</string>
     <string name="paypal_client_id">AWtJumJv_xlSGtmiIgQINvu1ZwDt3WouvgRMrJNx48kbONsieK3IGJyTbKceS7Wy98_1kK267tTU3S77</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_after_login">after_loginA</string>
 </resources>
