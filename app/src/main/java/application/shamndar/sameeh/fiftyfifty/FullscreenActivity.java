@@ -71,7 +71,7 @@ public class FullscreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(FullscreenActivity.this, MainActivity.class);
+                final Intent mainIntent = new Intent(FullscreenActivity.this, cards_login.class);
                 FullscreenActivity.this.startActivity(mainIntent);
                 FullscreenActivity.this.finish();
             }
