@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:src="@drawable/fifsmallmin"
+        android:src="@drawable/fifsmallmin2"
         android:contentDescription="ICON"
         android:layout_alignParentTop="true"
         android:scaleType="fitCenter"

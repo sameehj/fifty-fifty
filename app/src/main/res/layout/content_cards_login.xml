@@ -14,26 +14,41 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login with PayPal"
+        android:text="  Login with PayPal  "
         android:id="@+id/signinbut"
-        android:layout_alignBottom="@+id/imageView5"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView5"
-        android:src="@drawable/descfinal4"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:background="#f0f0f0"
+        android:textColor="#999999"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FAQ"
+        android:text="  Learn more!  "
         android:id="@+id/faqbut"
+        android:background="#f0f0f0"
+        android:textColor="#999999"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/signinbut"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1) Login with PayPal. \n2) Click &quot;Register Now&quot; for 10$ with PayPal \n3) Invite friends to use the app too! for each friend registering you recieve 5$, for each friend your friends referer you recieve 2.5$! \n4) click recieve money anytime you wish! \n5) Start Making Money!"
+        android:id="@+id/textView3"
+        android:textColor="#b6b6b6"
+        android:textSize="17dp"
+        android:focusableInTouchMode="true"
+        android:fontFamily="Helvetika"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:textAllCaps="false"/>
 
 </RelativeLayout>
