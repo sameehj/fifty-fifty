@@ -168,7 +168,12 @@ public class inAppExperince extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                register();
+                if(FullscreenActivity.MockEnabled){
+                    onRegisterFinish(true,null);
+                }
+                else {
+                    register();
+                }
             }
         });
         /**
