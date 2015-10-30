@@ -15,6 +15,7 @@
 		61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E42CD91BE41A4300C4C2E7 /* LaunchScreen.storyboard */; };
 		61E42CE61BE41A4300C4C2E7 /* fifty_fiftyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CE51BE41A4300C4C2E7 /* fifty_fiftyTests.m */; };
 		61E42CF11BE41A4300C4C2E7 /* fifty_fiftyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */; };
+		61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D0C1BE423BC00C4C2E7 /* sc.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		61E42CEC1BE41A4300C4C2E7 /* fifty-fiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fifty-fiftyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fifty_fiftyUITests.m; sourceTree = "<group>"; };
 		61E42CF21BE41A4300C4C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E42D0C1BE423BC00C4C2E7 /* sc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sc.png; path = pictures/sc.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */ = {
 			isa = PBXGroup;
 			children = (
+				61E42D0C1BE423BC00C4C2E7 /* sc.png */,
 				61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */,
 				61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */,
 				61E42CD11BE41A4300C4C2E7 /* ViewController.h */,
@@ -246,6 +249,7 @@
 				61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */,
 				61E42CD81BE41A4300C4C2E7 /* Assets.xcassets in Resources */,
 				61E42CD61BE41A4300C4C2E7 /* Main.storyboard in Resources */,
+				61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				61E42CF71BE41A4300C4C2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61E42CF81BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				61E42CFA1BE41A4300C4C2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61E42CFB1BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				61E42CFD1BE41A4300C4C2E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
