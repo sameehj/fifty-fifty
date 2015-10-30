@@ -1,11 +1,15 @@
 package application.shamndar.sameeh.fiftyfifty;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
@@ -56,9 +60,9 @@ public class inAppExperince extends AppCompatActivity {
         {
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "FIFTY-FIFTY app is here! use my id" + userId);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my id for fifty-fifty!" + userId + "\n" + "http://unknowntraffic.com");
             sendIntent.setType("text/plain");
-            startActivity(sendIntent);
+            startActivity(Intent.createChooser(sendIntent, "Share your Id for fifty-fifty!"));
         }
 
     };
@@ -79,6 +83,46 @@ public class inAppExperince extends AppCompatActivity {
             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             ClipData clip = ClipData.newPlainText("http://google.com/", userId);
             clipboard.setPrimaryClip(clip);
+        }
+
+    };
+
+
+    public class MyLovelyOnFacebook implements View.OnClickListener
+    {
+
+        String userId;
+        public MyLovelyOnFacebook(String userId) {
+            this.userId = userId;
+        }
+
+        @Override
+        public void onClick(View v)
+        {
+            String urlToShare = "http://stackoverflow.com/questions/7545254";
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+// intent.putExtra(Intent.EXTRA_SUBJECT, "Foo bar"); // NB: has no effect!
+            intent.putExtra(Intent.EXTRA_TEXT, urlToShare);
+
+// See if official Facebook app is found
+            boolean facebookAppFound = false;
+            List<ResolveInfo> matches = getPackageManager().queryIntentActivities(intent, 0);
+            for (ResolveInfo info : matches) {
+                if (info.activityInfo.packageName.toLowerCase().startsWith("com.facebook.katana")) {
+                    intent.setPackage(info.activityInfo.packageName);
+                    facebookAppFound = true;
+                    break;
+                }
+            }
+
+// As fallback, launch sharer.php in a browser
+            if (!facebookAppFound) {
+                String sharerUrl = "https://www.facebook.com/sharer/sharer.php?u=" + urlToShare;
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(sharerUrl));
+            }
+
+            startActivity(intent);
         }
 
     };
@@ -119,6 +163,14 @@ public class inAppExperince extends AppCompatActivity {
                 finish();
             }
         });
+
+        Button register = (Button) findViewById (R.id.register);
+        register.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                register();
+            }
+        });
         /**
          * loads information
          */
@@ -142,6 +194,9 @@ public class inAppExperince extends AppCompatActivity {
             }
         });
 
+//        FloatingActionButton fab4 = (FloatingActionButton) findViewById(R.id.fabFacebook);
+//        fab4.setOnClickListener(new MyLovelyOnFacebook(this.objectId));
+//
         FloatingActionButton fab2 = (FloatingActionButton) findViewById(R.id.fabShare);
         fab2.setOnClickListener(new MyLovelyOnClickShare(this.objectId));
 
@@ -150,7 +205,48 @@ public class inAppExperince extends AppCompatActivity {
 
     }
 
+/*
+please call this function for register and for receive money, with boolean success, and error msg if needed.
+ */
 
+    private void register(){
+        onRegisterFinish(true,null);
+    }
+
+    private void onRegisterFinish(Boolean success,String errorMsg){
+        if(success){
+            new AlertDialog.Builder(inAppExperince.this)
+                    .setTitle("Register Successful")
+                    .setMessage("Start using the app!")
+                    .setCancelable(false)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // whatever...
+                        }
+                    }).create().show();
+
+        }
+        else{
+            new AlertDialog.Builder(inAppExperince.this)
+                    .setTitle("Register Failed")
+                    .setMessage("Please contact us. Error "+errorMsg)
+                    .setCancelable(false)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // whatever...
+                        }
+                    }).create().show();
+
+        }
+
+        refreshFunction();
+    }
+
+    private void onReceiveFinish(Boolean success, String errorMsg){
+        refreshFunction();
+    }
 
     private void refreshFunction(){
         ParseQuery<ParseObject> query = ParseQuery.getQuery("User");
