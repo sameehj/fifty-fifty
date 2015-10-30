@@ -13,6 +13,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -183,29 +184,6 @@ public class cards_login extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-//    @SuppressWarnings("StatementWithEmptyBody")
-//    public boolean onNavigationItemSelected(MenuItem item) {
-//        // Handle navigation view item clicks here.
-//        int id = item.getItemId();
-//
-//        if (id == R.id.nav_camara) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
-//
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
-//        return true;
-//    }
 
     @Override
     public void onDestroy() {
@@ -255,15 +233,15 @@ public class cards_login extends AppCompatActivity {
 //        else{
 //
 //        }
-//        Map<String, String> map = new HashMap<String, String>();
-//        map.put("authorization", authorization.getAuthorizationCode());
-//        Log.e("auth",authorization.getAuthorizationCode());
-//        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
-//            @Override
-//            public void done(Object response, ParseException exc) {
-//                Log.e("cloud code example", "response: " + response);
-//            }
-//        });
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("authorization", Base64.encodeToString(authorization.getAuthorizationCode().getBytes(),0));
+        Log.e("auth",authorization.getAuthorizationCode());
+        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
+            @Override
+            public void done(Object response, ParseException exc) {
+                Log.e("cloud code example", "response: " + response);
+            }
+        });
 
         /**
          * send request to payPal

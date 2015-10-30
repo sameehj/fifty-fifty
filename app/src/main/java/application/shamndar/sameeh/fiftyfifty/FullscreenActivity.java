@@ -30,40 +30,21 @@ public class FullscreenActivity extends AppCompatActivity {
      */
     public static final boolean MockEnabled = true;
 
-    private static final boolean AUTO_HIDE = true;
-
-    /**
-     * If {@link #AUTO_HIDE} is set, the number of milliseconds to wait after
-     * user interaction before hiding the system UI.
-     */
-    private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
-
-    /**
-     * Some older devices needs a small delay between UI widget updates
-     * and a change of the status and navigation bar.
-     */
-    private static final int UI_ANIMATION_DELAY = 300;
-
-    private View mContentView;
-    private View mControlsView;
-    private boolean mVisible;
     private boolean noUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//Remove title bar
-//        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//
-////Remove notification bar
-//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        setContentView(R.layout.activity_fullscreen);
+
 
         String parse_app_id="Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk";
         String parse_client_id="jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u";
         Parse.initialize(this, parse_app_id, parse_client_id);
 
 
-        setContentView(R.layout.activity_fullscreen);
         this.noUser = false;
         SharedPreferences mySharedPreferences ;
         mySharedPreferences=getSharedPreferences("userName",0);

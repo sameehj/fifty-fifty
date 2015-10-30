@@ -176,6 +176,19 @@ public class inAppExperince extends AppCompatActivity {
                 }
             }
         });
+
+        Button recive = (Button) findViewById (R.id.getMoney);
+        recive.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(FullscreenActivity.MockEnabled){
+                    onReceiveFinish(true,null);
+                }
+                else {
+                    register();
+                }
+            }
+        });
         /**
          * loads information
          */
@@ -218,6 +231,11 @@ please call this function for register and for receive money, with boolean succe
         onRegisterFinish(true,null);
     }
 
+    private void recieveMoney(){
+        onRegisterFinish(true,null);
+    }
+
+
     private void onRegisterFinish(Boolean success,String errorMsg){
         if(success){
             new AlertDialog.Builder(inAppExperince.this)
@@ -250,6 +268,33 @@ please call this function for register and for receive money, with boolean succe
     }
 
     private void onReceiveFinish(Boolean success, String errorMsg){
+        if(success){
+            new AlertDialog.Builder(inAppExperince.this)
+                    .setTitle("Sending the money was successful")
+                    .setMessage("Keep referring more friends!")
+                    .setCancelable(false)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // whatever...
+                        }
+                    }).create().show();
+
+        }
+        else{
+            new AlertDialog.Builder(inAppExperince.this)
+                    .setTitle("Paid Failed")
+                    .setMessage("Please contact us. Error "+errorMsg)
+                    .setCancelable(false)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            // whatever...
+                        }
+                    }).create().show();
+
+        }
+
         refreshFunction();
     }
 
@@ -289,6 +334,8 @@ please call this function for register and for receive money, with boolean succe
             Button registerBut = (Button) findViewById(R.id.register);
             registerBut.setVisibility(View.INVISIBLE);
             TextView credit = (TextView) findViewById(R.id.credit);
+            Button getBut = (Button) findViewById(R.id.getMoney);
+            getBut.setEnabled(true);
             credit.setText("Credit: " + this.credit);
             TextView friends = (TextView) findViewById(R.id.rf);
             friends.setText("Refered friends: "+this.friends);
@@ -300,9 +347,9 @@ please call this function for register and for receive money, with boolean succe
         }
         else{
             TextView refIdText = (TextView) findViewById(R.id.refId);
-            refIdText.setText("Referer Id: " + objectId);
+            refIdText.setText("Referer Id: " + "Please register first");
             Button registerBut = (Button) findViewById(R.id.register);
-            registerBut.setVisibility(View.INVISIBLE);
+            registerBut.setVisibility(View.VISIBLE);
             Button getBut = (Button) findViewById(R.id.getMoney);
             getBut.setEnabled(false);
             TextView credit = (TextView) findViewById(R.id.credit);
@@ -313,6 +360,9 @@ please call this function for register and for receive money, with boolean succe
             friendsof.setText("Friends of friends: "+0);
             TextView friendsofof = (TextView) findViewById(R.id.frfrf);
             friendsofof.setText("Friends of friends of friends: "+0);
+            ((FloatingActionButton) findViewById(R.id.fabRefresh)).setVisibility(View.INVISIBLE);
+            ((FloatingActionButton) findViewById(R.id.fabCopy)).setVisibility(View.INVISIBLE);
+            ((FloatingActionButton) findViewById(R.id.fabShare)).setVisibility(View.INVISIBLE);
 
         }
 
@@ -368,29 +418,6 @@ please call this function for register and for receive money, with boolean succe
         return super.onOptionsItemSelected(item);
     }
 
-//    @SuppressWarnings("StatementWithEmptyBody")
-//    public boolean onNavigationItemSelected(MenuItem item) {
-//        // Handle navigation view item clicks here.
-//        int id = item.getItemId();
-//
-//        if (id == R.id.nav_camara) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
-//
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
-//        return true;
-//    }
 
     @Override
     public void onDestroy() {

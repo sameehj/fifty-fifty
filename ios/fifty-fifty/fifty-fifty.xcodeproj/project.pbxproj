@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61E42CCD1BE41A4300C4C2E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CCC1BE41A4300C4C2E7 /* main.m */; };
+		61E42CD01BE41A4300C4C2E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */; };
+		61E42CD31BE41A4300C4C2E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CD21BE41A4300C4C2E7 /* ViewController.m */; };
+		61E42CD61BE41A4300C4C2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E42CD41BE41A4300C4C2E7 /* Main.storyboard */; };
+		61E42CD81BE41A4300C4C2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E42CD71BE41A4300C4C2E7 /* Assets.xcassets */; };
+		61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E42CD91BE41A4300C4C2E7 /* LaunchScreen.storyboard */; };
+		61E42CE61BE41A4300C4C2E7 /* fifty_fiftyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CE51BE41A4300C4C2E7 /* fifty_fiftyTests.m */; };
+		61E42CF11BE41A4300C4C2E7 /* fifty_fiftyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61E42CE21BE41A4300C4C2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E42CC01BE41A4300C4C2E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E42CC71BE41A4300C4C2E7;
+			remoteInfo = "fifty-fifty";
+		};
+		61E42CED1BE41A4300C4C2E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61E42CC01BE41A4300C4C2E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61E42CC71BE41A4300C4C2E7;
+			remoteInfo = "fifty-fifty";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61E42CC81BE41A4300C4C2E7 /* fifty-fifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fifty-fifty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E42CCC1BE41A4300C4C2E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		61E42CD11BE41A4300C4C2E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		61E42CD21BE41A4300C4C2E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		61E42CD51BE41A4300C4C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61E42CD71BE41A4300C4C2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61E42CDA1BE41A4300C4C2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61E42CDC1BE41A4300C4C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E42CE11BE41A4300C4C2E7 /* fifty-fiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fifty-fiftyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E42CE51BE41A4300C4C2E7 /* fifty_fiftyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fifty_fiftyTests.m; sourceTree = "<group>"; };
+		61E42CE71BE41A4300C4C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61E42CEC1BE41A4300C4C2E7 /* fifty-fiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fifty-fiftyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fifty_fiftyUITests.m; sourceTree = "<group>"; };
+		61E42CF21BE41A4300C4C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61E42CC51BE41A4300C4C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CDE1BE41A4300C4C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CE91BE41A4300C4C2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61E42CBF1BE41A4300C4C2E7 = {
+			isa = PBXGroup;
+			children = (
+				61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */,
+				61E42CE41BE41A4300C4C2E7 /* fifty-fiftyTests */,
+				61E42CEF1BE41A4300C4C2E7 /* fifty-fiftyUITests */,
+				61E42CC91BE41A4300C4C2E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61E42CC91BE41A4300C4C2E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61E42CC81BE41A4300C4C2E7 /* fifty-fifty.app */,
+				61E42CE11BE41A4300C4C2E7 /* fifty-fiftyTests.xctest */,
+				61E42CEC1BE41A4300C4C2E7 /* fifty-fiftyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */ = {
+			isa = PBXGroup;
+			children = (
+				61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */,
+				61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */,
+				61E42CD11BE41A4300C4C2E7 /* ViewController.h */,
+				61E42CD21BE41A4300C4C2E7 /* ViewController.m */,
+				61E42CD41BE41A4300C4C2E7 /* Main.storyboard */,
+				61E42CD71BE41A4300C4C2E7 /* Assets.xcassets */,
+				61E42CD91BE41A4300C4C2E7 /* LaunchScreen.storyboard */,
+				61E42CDC1BE41A4300C4C2E7 /* Info.plist */,
+				61E42CCB1BE41A4300C4C2E7 /* Supporting Files */,
+			);
+			path = "fifty-fifty";
+			sourceTree = "<group>";
+		};
+		61E42CCB1BE41A4300C4C2E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61E42CCC1BE41A4300C4C2E7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61E42CE41BE41A4300C4C2E7 /* fifty-fiftyTests */ = {
+			isa = PBXGroup;
+			children = (
+				61E42CE51BE41A4300C4C2E7 /* fifty_fiftyTests.m */,
+				61E42CE71BE41A4300C4C2E7 /* Info.plist */,
+			);
+			path = "fifty-fiftyTests";
+			sourceTree = "<group>";
+		};
+		61E42CEF1BE41A4300C4C2E7 /* fifty-fiftyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */,
+				61E42CF21BE41A4300C4C2E7 /* Info.plist */,
+			);
+			path = "fifty-fiftyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61E42CC71BE41A4300C4C2E7 /* fifty-fifty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E42CF51BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fifty" */;
+			buildPhases = (
+				61E42CC41BE41A4300C4C2E7 /* Sources */,
+				61E42CC51BE41A4300C4C2E7 /* Frameworks */,
+				61E42CC61BE41A4300C4C2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fifty-fifty";
+			productName = "fifty-fifty";
+			productReference = 61E42CC81BE41A4300C4C2E7 /* fifty-fifty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61E42CE01BE41A4300C4C2E7 /* fifty-fiftyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E42CF81BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyTests" */;
+			buildPhases = (
+				61E42CDD1BE41A4300C4C2E7 /* Sources */,
+				61E42CDE1BE41A4300C4C2E7 /* Frameworks */,
+				61E42CDF1BE41A4300C4C2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E42CE31BE41A4300C4C2E7 /* PBXTargetDependency */,
+			);
+			name = "fifty-fiftyTests";
+			productName = "fifty-fiftyTests";
+			productReference = 61E42CE11BE41A4300C4C2E7 /* fifty-fiftyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61E42CEB1BE41A4300C4C2E7 /* fifty-fiftyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61E42CFB1BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyUITests" */;
+			buildPhases = (
+				61E42CE81BE41A4300C4C2E7 /* Sources */,
+				61E42CE91BE41A4300C4C2E7 /* Frameworks */,
+				61E42CEA1BE41A4300C4C2E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61E42CEE1BE41A4300C4C2E7 /* PBXTargetDependency */,
+			);
+			name = "fifty-fiftyUITests";
+			productName = "fifty-fiftyUITests";
+			productReference = 61E42CEC1BE41A4300C4C2E7 /* fifty-fiftyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61E42CC01BE41A4300C4C2E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = personel;
+				TargetAttributes = {
+					61E42CC71BE41A4300C4C2E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					61E42CE01BE41A4300C4C2E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 61E42CC71BE41A4300C4C2E7;
+					};
+					61E42CEB1BE41A4300C4C2E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 61E42CC71BE41A4300C4C2E7;
+					};
+				};
+			};
+			buildConfigurationList = 61E42CC31BE41A4300C4C2E7 /* Build configuration list for PBXProject "fifty-fifty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61E42CBF1BE41A4300C4C2E7;
+			productRefGroup = 61E42CC91BE41A4300C4C2E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61E42CC71BE41A4300C4C2E7 /* fifty-fifty */,
+				61E42CE01BE41A4300C4C2E7 /* fifty-fiftyTests */,
+				61E42CEB1BE41A4300C4C2E7 /* fifty-fiftyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61E42CC61BE41A4300C4C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */,
+				61E42CD81BE41A4300C4C2E7 /* Assets.xcassets in Resources */,
+				61E42CD61BE41A4300C4C2E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CDF1BE41A4300C4C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CEA1BE41A4300C4C2E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61E42CC41BE41A4300C4C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E42CD31BE41A4300C4C2E7 /* ViewController.m in Sources */,
+				61E42CD01BE41A4300C4C2E7 /* AppDelegate.m in Sources */,
+				61E42CCD1BE41A4300C4C2E7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CDD1BE41A4300C4C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E42CE61BE41A4300C4C2E7 /* fifty_fiftyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61E42CE81BE41A4300C4C2E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61E42CF11BE41A4300C4C2E7 /* fifty_fiftyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61E42CE31BE41A4300C4C2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E42CC71BE41A4300C4C2E7 /* fifty-fifty */;
+			targetProxy = 61E42CE21BE41A4300C4C2E7 /* PBXContainerItemProxy */;
+		};
+		61E42CEE1BE41A4300C4C2E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61E42CC71BE41A4300C4C2E7 /* fifty-fifty */;
+			targetProxy = 61E42CED1BE41A4300C4C2E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61E42CD41BE41A4300C4C2E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61E42CD51BE41A4300C4C2E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61E42CD91BE41A4300C4C2E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61E42CDA1BE41A4300C4C2E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61E42CF31BE41A4300C4C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61E42CF41BE41A4300C4C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61E42CF61BE41A4300C4C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "fifty-fifty/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61E42CF71BE41A4300C4C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "fifty-fifty/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61E42CF91BE41A4300C4C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "fifty-fiftyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fiftyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fifty-fifty.app/fifty-fifty";
+			};
+			name = Debug;
+		};
+		61E42CFA1BE41A4300C4C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "fifty-fiftyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fiftyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fifty-fifty.app/fifty-fifty";
+			};
+			name = Release;
+		};
+		61E42CFC1BE41A4300C4C2E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "fifty-fiftyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fiftyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "fifty-fifty";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		61E42CFD1BE41A4300C4C2E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "fifty-fiftyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fiftyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "fifty-fifty";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61E42CC31BE41A4300C4C2E7 /* Build configuration list for PBXProject "fifty-fifty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E42CF31BE41A4300C4C2E7 /* Debug */,
+				61E42CF41BE41A4300C4C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61E42CF51BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fifty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E42CF61BE41A4300C4C2E7 /* Debug */,
+				61E42CF71BE41A4300C4C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61E42CF81BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E42CF91BE41A4300C4C2E7 /* Debug */,
+				61E42CFA1BE41A4300C4C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61E42CFB1BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fiftyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61E42CFC1BE41A4300C4C2E7 /* Debug */,
+				61E42CFD1BE41A4300C4C2E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61E42CC01BE41A4300C4C2E7 /* Project object */;
+}
