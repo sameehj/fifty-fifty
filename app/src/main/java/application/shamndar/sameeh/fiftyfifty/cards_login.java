@@ -86,19 +86,8 @@ public class cards_login extends AppCompatActivity {
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_cards_login);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
-            }
-        });
-
+        
         String parse_app_id="Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk";
         String parse_client_id="jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u";
         Parse.initialize(this, parse_app_id, parse_client_id);
