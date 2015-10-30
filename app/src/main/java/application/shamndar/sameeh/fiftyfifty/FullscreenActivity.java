@@ -1,7 +1,9 @@
 package application.shamndar.sameeh.fiftyfifty;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +12,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.parse.Parse;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -20,6 +24,12 @@ public class FullscreenActivity extends AppCompatActivity {
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
      */
+
+    /**
+     * this mock before integrating cloud
+     */
+    public static final boolean MockEnabled = true;
+
     private static final boolean AUTO_HIDE = true;
 
     /**
@@ -37,6 +47,7 @@ public class FullscreenActivity extends AppCompatActivity {
     private View mContentView;
     private View mControlsView;
     private boolean mVisible;
+    private boolean noUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +58,19 @@ public class FullscreenActivity extends AppCompatActivity {
 ////Remove notification bar
 //        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        String parse_app_id="Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk";
+        String parse_client_id="jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u";
+        Parse.initialize(this, parse_app_id, parse_client_id);
 
 
         setContentView(R.layout.activity_fullscreen);
-
+        this.noUser = false;
+        SharedPreferences mySharedPreferences ;
+        mySharedPreferences=getSharedPreferences("userName",0);
+        SharedPreferences.Editor editor= mySharedPreferences.edit();
+        String user= mySharedPreferences.getString("emailAddress","");
+        if(user == "")
+            this.noUser = true;
 //        mVisible = true;
 //        mControlsView = findViewById(R.id.fullscreen_content_controls);
 //        mContentView = findViewById(R.id.fullscreen_content);
@@ -67,18 +87,28 @@ public class FullscreenActivity extends AppCompatActivity {
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
+        final Intent intent;
+        if(this.noUser){
+            intent= new Intent(FullscreenActivity.this, cards_login.class);
+        }else{
+            intent= new Intent(FullscreenActivity.this, inAppExperince.class);
+            intent.putExtra("email", user);
+        }
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(FullscreenActivity.this, cards_login.class);
-                FullscreenActivity.this.startActivity(mainIntent);
-                FullscreenActivity.this.finish();
+                startActivity(intent);
+
             }
         }, 2000);
 
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 //    @Override
 //    protected void onPostCreate(Bundle savedInstanceState) {
 //        super.onPostCreate(savedInstanceState);

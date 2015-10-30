@@ -3,6 +3,7 @@ package application.shamndar.sameeh.fiftyfifty;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -79,6 +80,10 @@ public class cards_login extends AppCompatActivity {
     }
 
     @Override
+    public void onBackPressed() {
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -87,12 +92,6 @@ public class cards_login extends AppCompatActivity {
 
         setContentView(R.layout.activity_cards_login);
 
-
-        String parse_app_id="Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk";
-        String parse_client_id="jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u";
-        Parse.initialize(this, parse_app_id, parse_client_id);
-        ParseObject zobor = new ParseObject("User");
-        zobor.saveInBackground();
 
         // Start with mock environment.  When ready, switch to sandbox (ENVIRONMENT_SANDBOX)
         // or live (ENVIRONMENT_PRODUCTION)
@@ -256,15 +255,46 @@ public class cards_login extends AppCompatActivity {
 //        else{
 //
 //        }
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("authorization", authorization.getAuthorizationCode());
-        Log.e("auth",authorization.getAuthorizationCode());
-        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
-            @Override
-            public void done(Object response, ParseException exc) {
-                Log.e("cloud code example", "response: " + response);
-            }
-        });
+//        Map<String, String> map = new HashMap<String, String>();
+//        map.put("authorization", authorization.getAuthorizationCode());
+//        Log.e("auth",authorization.getAuthorizationCode());
+//        ParseCloud.callFunctionInBackground("myMagicMushroomsFunction", map, new FunctionCallback<Object>() {
+//            @Override
+//            public void done(Object response, ParseException exc) {
+//                Log.e("cloud code example", "response: " + response);
+//            }
+//        });
+
+        /**
+         * send request to payPal
+         */
+
+        Boolean Success = true;
+
+        if(FullscreenActivity.MockEnabled){
+
+            // select your mode to be either private or public.
+
+// get the sharedPreference of your context.
+
+            SharedPreferences  mySharedPreferences ;
+            mySharedPreferences=getSharedPreferences("userName",0);
+
+
+// retrieve an editor to modify the shared preferences
+
+            SharedPreferences.Editor editor= mySharedPreferences.edit();
+
+/* now store your primitive type values. In this case it is true, 1f and Hello! World  */
+
+            editor.putString("emailAddress","kha@gmail.com");
+
+
+            editor.commit();
+            Intent intent = new Intent(cards_login.this, inAppExperince.class);
+            intent.putExtra("email", "kha@gmail.com");
+            startActivity(intent);
+        }
 
     }
 }

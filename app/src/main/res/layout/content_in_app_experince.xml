@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_in_app_experince"
+    tools:context="application.shamndar.sameeh.fiftyfifty.inAppExperince"
+    android:background="#ffffff">
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabCopy"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/copy"
+        app:backgroundTint="#feac32"
+        android:layout_below="@+id/refId"
+        android:layout_toLeftOf="@+id/fabRefresh"
+        android:layout_toStartOf="@+id/fabRefresh" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabShare"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/share"
+        app:backgroundTint="#facc83"
+        android:layout_below="@+id/refId"
+        android:layout_toRightOf="@+id/fabRefresh"
+        android:layout_toEndOf="@+id/fabRefresh" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fabRefresh"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/refresh"
+        android:layout_below="@+id/refId"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#43cbf3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/frfrf"
+        android:layout_above="@+id/signout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#b6b6b6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/frf"
+        android:layout_above="@+id/frfrf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#b6b6b6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Recieve Money "
+        android:id="@+id/getMoney"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#999999"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="credit"
+        android:id="@+id/credit"
+        android:layout_above="@+id/getMoney"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b6b6b6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/refId"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b6b6b6" />;
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register - PayPal"
+        android:id="@+id/register"
+        android:layout_below="@+id/refId"
+        android:layout_centerHorizontal="true"
+        android:textColor="#999999"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/rf"
+        android:layout_above="@+id/frf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#b6b6b6" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Learn more "
+        android:id="@+id/learnmore"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#999999"
+        android:background="#f0f0f0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Sign out "
+        android:id="@+id/signout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#999999"
+        android:background="#f0f0f0" />
+</RelativeLayout>
