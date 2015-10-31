@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 #import "loginViewController.h"
+#import <Security/Security.h>
 
+#define SERVICE_NAME @"ANY_NAME_FOR_YOU"
+#define GROUP_NAME @"YOUR_APP_ID.com.apps.shared" //GROUP NAME should start with application identifier.
+ 
 @interface ViewController ()
 
 @end
@@ -27,7 +31,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [NSThread sleepForTimeInterval:.2];
-    
     
     loginViewController *monitorMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:monitorMenuViewController];

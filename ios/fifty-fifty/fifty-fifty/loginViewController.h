@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
 
-@interface loginViewController : UIViewController
+@interface loginViewController : UIViewController<PayPalFuturePaymentDelegate>
 
 
 @end

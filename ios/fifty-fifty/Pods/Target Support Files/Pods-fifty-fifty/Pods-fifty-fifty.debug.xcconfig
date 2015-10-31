@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/Parse" "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/PayPal-iOS-SDK/PayPalMobile" $(inherited) "${PODS_ROOT}/PayPal-iOS-SDK/CardIO" $(inherited) "${PODS_ROOT}/PayPal-iOS-SDK/CardIO" $(inherited) "${PODS_ROOT}/PayPal-iOS-SDK/CardIO"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bolts" -isystem "${PODS_ROOT}/Headers/Public/Parse" -isystem "${PODS_ROOT}/Headers/Public/PayPal-iOS-SDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Bolts" -l"CardIO" -l"Parse" -l"PayPalMobile" -l"c++" -l"opencv_core" -l"opencv_imgproc" -l"sqlite3" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "MessageUI" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "Accounts" -weak_framework "Social"
+PODS_ROOT = ${SRCROOT}/Pods

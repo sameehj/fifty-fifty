@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "PayPalMobile/PayPalMobile.h"
+#import "PayPalMobile.h"
+#import "Parse/Parse.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-        [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
-                                                               PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
+
+        [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"AWtJumJv_xlSGtmiIgQINvu1ZwDt3WouvgRMrJNx48kbONsieK3IGJyTbKceS7Wy98_1kK267tTU3S77",
+                                                               PayPalEnvironmentSandbox : @"EFXqjhqiPJzvzmmAYrFwCMNPVpHCfD_1pLr04tbjEFLcKTZtmN3zzqq-8YO3oQWDc-XtozCwmUybGaxp"}];
+    [Parse setApplicationId:@"Fmj1JQB1MPypBh7jz53Yj6NoHpBLDMkW2P5zDGjk"
+                  clientKey:@"jrAg1S76N75fxvCNuHqoo0rF8dFF2iPUdSNsX93u"];
     return YES;
 }
 

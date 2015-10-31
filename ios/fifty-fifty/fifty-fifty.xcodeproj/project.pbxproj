@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61623FC61BE462C8000418A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61623FC51BE462C8000418A9 /* Security.framework */; };
 		61E42CCD1BE41A4300C4C2E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CCC1BE41A4300C4C2E7 /* main.m */; };
 		61E42CD01BE41A4300C4C2E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */; };
 		61E42CD31BE41A4300C4C2E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CD21BE41A4300C4C2E7 /* ViewController.m */; };
@@ -18,7 +19,6 @@
 		61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D0C1BE423BC00C4C2E7 /* sc.png */; settings = {ASSET_TAGS = (); }; };
 		61E42D111BE42CA900C4C2E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D101BE42CA900C4C2E7 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
 		61E42D131BE434FA00C4C2E7 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42D121BE434FA00C4C2E7 /* loginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		61E42D161BE43EAA00C4C2E7 /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D151BE43EAA00C4C2E7 /* PayPalMobile */; settings = {ASSET_TAGS = (); }; };
 		61E42D181BE43F1F00C4C2E7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D171BE43F1F00C4C2E7 /* Accelerate.framework */; };
 		61E42D1A1BE43F2500C4C2E7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D191BE43F2500C4C2E7 /* AudioToolbox.framework */; };
 		61E42D1C1BE43F2A00C4C2E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D1B1BE43F2A00C4C2E7 /* AVFoundation.framework */; };
@@ -28,9 +28,8 @@
 		61E42D241BE43F4300C4C2E7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */; };
 		61E42D261BE43F4900C4C2E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */; };
 		61E42D281BE43F4E00C4C2E7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */; };
-		61E42D301BE4408700C4C2E7 /* CardIO in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D2E1BE4408700C4C2E7 /* CardIO */; settings = {ASSET_TAGS = (); }; };
-		61E42D311BE4408700C4C2E7 /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D2F1BE4408700C4C2E7 /* PayPalMobile */; settings = {ASSET_TAGS = (); }; };
-		61E42D331BE440D800C4C2E7 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */; };
+		61E42D351BE44C3E00C4C2E7 /* inAppExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42D341BE44C3E00C4C2E7 /* inAppExperience.m */; settings = {ASSET_TAGS = (); }; };
+		99783AF0582E793C378BF9DB /* libPods-fifty-fifty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F8F3B62C495708820DD080 /* libPods-fifty-fifty.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0181DD4CD2918E57431D3772 /* Pods-fifty-fifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifty-fifty.release.xcconfig"; path = "Pods/Target Support Files/Pods-fifty-fifty/Pods-fifty-fifty.release.xcconfig"; sourceTree = "<group>"; };
+		61623FC51BE462C8000418A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		61E42CC81BE41A4300C4C2E7 /* fifty-fifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fifty-fifty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E42CCC1BE41A4300C4C2E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		61E42D101BE42CA900C4C2E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		61E42D121BE434FA00C4C2E7 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		61E42D141BE4352800C4C2E7 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
-		61E42D151BE43EAA00C4C2E7 /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PayPalMobile; path = "/Users/personel/fifty-fifty/ios/fifty-fifty/fifty-fifty/PayPalMobile"; sourceTree = "<absolute>"; };
 		61E42D171BE43F1F00C4C2E7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		61E42D191BE43F2500C4C2E7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		61E42D1B1BE43F2A00C4C2E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -81,9 +81,10 @@
 		61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		61E42D2E1BE4408700C4C2E7 /* CardIO */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CardIO; sourceTree = "<group>"; };
-		61E42D2F1BE4408700C4C2E7 /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
-		61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = "fifty-fifty/PayPalMobile/libPayPalMobile.a"; sourceTree = "<group>"; };
+		61E42D341BE44C3E00C4C2E7 /* inAppExperience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = inAppExperience.m; sourceTree = "<group>"; };
+		61E42D361BE44C5400C4C2E7 /* inAppExperience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inAppExperience.h; sourceTree = "<group>"; };
+		8D7DF2570EABC5DF312321D8 /* Pods-fifty-fifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifty-fifty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fifty-fifty/Pods-fifty-fifty.debug.xcconfig"; sourceTree = "<group>"; };
+		F0F8F3B62C495708820DD080 /* libPods-fifty-fifty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fifty-fifty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61E42D331BE440D800C4C2E7 /* libPayPalMobile.a in Frameworks */,
+				61623FC61BE462C8000418A9 /* Security.framework in Frameworks */,
 				61E42D281BE43F4E00C4C2E7 /* SafariServices.framework in Frameworks */,
 				61E42D261BE43F4900C4C2E7 /* SystemConfiguration.framework in Frameworks */,
 				61E42D241BE43F4300C4C2E7 /* MobileCoreServices.framework in Frameworks */,
@@ -101,6 +102,7 @@
 				61E42D1C1BE43F2A00C4C2E7 /* AVFoundation.framework in Frameworks */,
 				61E42D1A1BE43F2500C4C2E7 /* AudioToolbox.framework in Frameworks */,
 				61E42D181BE43F1F00C4C2E7 /* Accelerate.framework in Frameworks */,
+				99783AF0582E793C378BF9DB /* libPods-fifty-fifty.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +123,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27429BFF6159668BF1DEA252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D7DF2570EABC5DF312321D8 /* Pods-fifty-fifty.debug.xcconfig */,
+				0181DD4CD2918E57431D3772 /* Pods-fifty-fifty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		333AA2E0DBF89F6D8CB4F90C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61623FC51BE462C8000418A9 /* Security.framework */,
+				F0F8F3B62C495708820DD080 /* libPods-fifty-fifty.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		61E42CBF1BE41A4300C4C2E7 = {
 			isa = PBXGroup;
 			children = (
-				61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */,
 				61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */,
 				61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */,
 				61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */,
@@ -138,6 +157,8 @@
 				61E42CE41BE41A4300C4C2E7 /* fifty-fiftyTests */,
 				61E42CEF1BE41A4300C4C2E7 /* fifty-fiftyUITests */,
 				61E42CC91BE41A4300C4C2E7 /* Products */,
+				27429BFF6159668BF1DEA252 /* Pods */,
+				333AA2E0DBF89F6D8CB4F90C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,8 +175,6 @@
 		61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */ = {
 			isa = PBXGroup;
 			children = (
-				61E42D2E1BE4408700C4C2E7 /* CardIO */,
-				61E42D2F1BE4408700C4C2E7 /* PayPalMobile */,
 				61E42D0C1BE423BC00C4C2E7 /* sc.png */,
 				61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */,
 				61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */,
@@ -170,6 +189,8 @@
 				61E42CCB1BE41A4300C4C2E7 /* Supporting Files */,
 				61E42D121BE434FA00C4C2E7 /* loginViewController.m */,
 				61E42D141BE4352800C4C2E7 /* loginViewController.h */,
+				61E42D341BE44C3E00C4C2E7 /* inAppExperience.m */,
+				61E42D361BE44C5400C4C2E7 /* inAppExperience.h */,
 			);
 			path = "fifty-fifty";
 			sourceTree = "<group>";
@@ -206,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61E42CF51BE41A4300C4C2E7 /* Build configuration list for PBXNativeTarget "fifty-fifty" */;
 			buildPhases = (
+				37329FC8823BA0A286FC646D /* Check Pods Manifest.lock */,
 				61E42CC41BE41A4300C4C2E7 /* Sources */,
 				61E42CC51BE41A4300C4C2E7 /* Frameworks */,
 				61E42CC61BE41A4300C4C2E7 /* Resources */,
+				069903AD221608A0E0E37351 /* Embed Pods Frameworks */,
+				532A7C2A6B63EF22743BB110 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,10 +329,7 @@
 				61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */,
 				61E42CD81BE41A4300C4C2E7 /* Assets.xcassets in Resources */,
 				61E42CD61BE41A4300C4C2E7 /* Main.storyboard in Resources */,
-				61E42D311BE4408700C4C2E7 /* PayPalMobile in Resources */,
-				61E42D161BE43EAA00C4C2E7 /* PayPalMobile in Resources */,
 				61E42D111BE42CA900C4C2E7 /* Login.storyboard in Resources */,
-				61E42D301BE4408700C4C2E7 /* CardIO in Resources */,
 				61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,12 +350,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		069903AD221608A0E0E37351 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifty-fifty/Pods-fifty-fifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37329FC8823BA0A286FC646D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		532A7C2A6B63EF22743BB110 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifty-fifty/Pods-fifty-fifty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		61E42CC41BE41A4300C4C2E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				61E42D131BE434FA00C4C2E7 /* loginViewController.m in Sources */,
+				61E42D351BE44C3E00C4C2E7 /* inAppExperience.m in Sources */,
 				61E42CD31BE41A4300C4C2E7 /* ViewController.m in Sources */,
 				61E42CD01BE41A4300C4C2E7 /* AppDelegate.m in Sources */,
 				61E42CCD1BE41A4300C4C2E7 /* main.m in Sources */,
@@ -476,6 +546,7 @@
 		};
 		61E42CF61BE41A4300C4C2E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7DF2570EABC5DF312321D8 /* Pods-fifty-fifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fifty-fifty/Info.plist";
@@ -484,10 +555,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/fifty-fifty/PayPalMobile",
 				);
-				OTHER_LDFLAGS = (
-					"-lc++",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -495,6 +563,7 @@
 		};
 		61E42CF71BE41A4300C4C2E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0181DD4CD2918E57431D3772 /* Pods-fifty-fifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fifty-fifty/Info.plist";
@@ -503,10 +572,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/fifty-fifty/PayPalMobile",
 				);
-				OTHER_LDFLAGS = (
-					"-lc++",
-					"-ObjC",
-				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
