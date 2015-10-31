@@ -16,6 +16,21 @@
 		61E42CE61BE41A4300C4C2E7 /* fifty_fiftyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CE51BE41A4300C4C2E7 /* fifty_fiftyTests.m */; };
 		61E42CF11BE41A4300C4C2E7 /* fifty_fiftyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */; };
 		61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D0C1BE423BC00C4C2E7 /* sc.png */; settings = {ASSET_TAGS = (); }; };
+		61E42D111BE42CA900C4C2E7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D101BE42CA900C4C2E7 /* Login.storyboard */; settings = {ASSET_TAGS = (); }; };
+		61E42D131BE434FA00C4C2E7 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E42D121BE434FA00C4C2E7 /* loginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		61E42D161BE43EAA00C4C2E7 /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D151BE43EAA00C4C2E7 /* PayPalMobile */; settings = {ASSET_TAGS = (); }; };
+		61E42D181BE43F1F00C4C2E7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D171BE43F1F00C4C2E7 /* Accelerate.framework */; };
+		61E42D1A1BE43F2500C4C2E7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D191BE43F2500C4C2E7 /* AudioToolbox.framework */; };
+		61E42D1C1BE43F2A00C4C2E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D1B1BE43F2A00C4C2E7 /* AVFoundation.framework */; };
+		61E42D1E1BE43F3100C4C2E7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D1D1BE43F3100C4C2E7 /* CoreLocation.framework */; };
+		61E42D201BE43F3700C4C2E7 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D1F1BE43F3700C4C2E7 /* CoreMedia.framework */; };
+		61E42D221BE43F3D00C4C2E7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D211BE43F3D00C4C2E7 /* MessageUI.framework */; };
+		61E42D241BE43F4300C4C2E7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */; };
+		61E42D261BE43F4900C4C2E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */; };
+		61E42D281BE43F4E00C4C2E7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */; };
+		61E42D301BE4408700C4C2E7 /* CardIO in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D2E1BE4408700C4C2E7 /* CardIO */; settings = {ASSET_TAGS = (); }; };
+		61E42D311BE4408700C4C2E7 /* PayPalMobile in Resources */ = {isa = PBXBuildFile; fileRef = 61E42D2F1BE4408700C4C2E7 /* PayPalMobile */; settings = {ASSET_TAGS = (); }; };
+		61E42D331BE440D800C4C2E7 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +68,22 @@
 		61E42CF01BE41A4300C4C2E7 /* fifty_fiftyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fifty_fiftyUITests.m; sourceTree = "<group>"; };
 		61E42CF21BE41A4300C4C2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61E42D0C1BE423BC00C4C2E7 /* sc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sc.png; path = pictures/sc.png; sourceTree = "<group>"; };
+		61E42D101BE42CA900C4C2E7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		61E42D121BE434FA00C4C2E7 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
+		61E42D141BE4352800C4C2E7 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		61E42D151BE43EAA00C4C2E7 /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PayPalMobile; path = "/Users/personel/fifty-fifty/ios/fifty-fifty/fifty-fifty/PayPalMobile"; sourceTree = "<absolute>"; };
+		61E42D171BE43F1F00C4C2E7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		61E42D191BE43F2500C4C2E7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		61E42D1B1BE43F2A00C4C2E7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		61E42D1D1BE43F3100C4C2E7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		61E42D1F1BE43F3700C4C2E7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		61E42D211BE43F3D00C4C2E7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		61E42D2E1BE4408700C4C2E7 /* CardIO */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CardIO; sourceTree = "<group>"; };
+		61E42D2F1BE4408700C4C2E7 /* PayPalMobile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PayPalMobile; sourceTree = "<group>"; };
+		61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPayPalMobile.a; path = "fifty-fifty/PayPalMobile/libPayPalMobile.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E42D331BE440D800C4C2E7 /* libPayPalMobile.a in Frameworks */,
+				61E42D281BE43F4E00C4C2E7 /* SafariServices.framework in Frameworks */,
+				61E42D261BE43F4900C4C2E7 /* SystemConfiguration.framework in Frameworks */,
+				61E42D241BE43F4300C4C2E7 /* MobileCoreServices.framework in Frameworks */,
+				61E42D221BE43F3D00C4C2E7 /* MessageUI.framework in Frameworks */,
+				61E42D201BE43F3700C4C2E7 /* CoreMedia.framework in Frameworks */,
+				61E42D1E1BE43F3100C4C2E7 /* CoreLocation.framework in Frameworks */,
+				61E42D1C1BE43F2A00C4C2E7 /* AVFoundation.framework in Frameworks */,
+				61E42D1A1BE43F2500C4C2E7 /* AudioToolbox.framework in Frameworks */,
+				61E42D181BE43F1F00C4C2E7 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +124,16 @@
 		61E42CBF1BE41A4300C4C2E7 = {
 			isa = PBXGroup;
 			children = (
+				61E42D321BE440D800C4C2E7 /* libPayPalMobile.a */,
+				61E42D271BE43F4E00C4C2E7 /* SafariServices.framework */,
+				61E42D251BE43F4900C4C2E7 /* SystemConfiguration.framework */,
+				61E42D231BE43F4300C4C2E7 /* MobileCoreServices.framework */,
+				61E42D211BE43F3D00C4C2E7 /* MessageUI.framework */,
+				61E42D1F1BE43F3700C4C2E7 /* CoreMedia.framework */,
+				61E42D1D1BE43F3100C4C2E7 /* CoreLocation.framework */,
+				61E42D1B1BE43F2A00C4C2E7 /* AVFoundation.framework */,
+				61E42D191BE43F2500C4C2E7 /* AudioToolbox.framework */,
+				61E42D171BE43F1F00C4C2E7 /* Accelerate.framework */,
 				61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */,
 				61E42CE41BE41A4300C4C2E7 /* fifty-fiftyTests */,
 				61E42CEF1BE41A4300C4C2E7 /* fifty-fiftyUITests */,
@@ -103,16 +154,22 @@
 		61E42CCA1BE41A4300C4C2E7 /* fifty-fifty */ = {
 			isa = PBXGroup;
 			children = (
+				61E42D2E1BE4408700C4C2E7 /* CardIO */,
+				61E42D2F1BE4408700C4C2E7 /* PayPalMobile */,
 				61E42D0C1BE423BC00C4C2E7 /* sc.png */,
 				61E42CCE1BE41A4300C4C2E7 /* AppDelegate.h */,
 				61E42CCF1BE41A4300C4C2E7 /* AppDelegate.m */,
 				61E42CD11BE41A4300C4C2E7 /* ViewController.h */,
 				61E42CD21BE41A4300C4C2E7 /* ViewController.m */,
 				61E42CD41BE41A4300C4C2E7 /* Main.storyboard */,
+				61E42D101BE42CA900C4C2E7 /* Login.storyboard */,
 				61E42CD71BE41A4300C4C2E7 /* Assets.xcassets */,
 				61E42CD91BE41A4300C4C2E7 /* LaunchScreen.storyboard */,
 				61E42CDC1BE41A4300C4C2E7 /* Info.plist */,
+				61E42CCC1BE41A4300C4C2E7 /* main.m */,
 				61E42CCB1BE41A4300C4C2E7 /* Supporting Files */,
+				61E42D121BE434FA00C4C2E7 /* loginViewController.m */,
+				61E42D141BE4352800C4C2E7 /* loginViewController.h */,
 			);
 			path = "fifty-fifty";
 			sourceTree = "<group>";
@@ -120,7 +177,6 @@
 		61E42CCB1BE41A4300C4C2E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				61E42CCC1BE41A4300C4C2E7 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,6 +305,10 @@
 				61E42CDB1BE41A4300C4C2E7 /* LaunchScreen.storyboard in Resources */,
 				61E42CD81BE41A4300C4C2E7 /* Assets.xcassets in Resources */,
 				61E42CD61BE41A4300C4C2E7 /* Main.storyboard in Resources */,
+				61E42D311BE4408700C4C2E7 /* PayPalMobile in Resources */,
+				61E42D161BE43EAA00C4C2E7 /* PayPalMobile in Resources */,
+				61E42D111BE42CA900C4C2E7 /* Login.storyboard in Resources */,
+				61E42D301BE4408700C4C2E7 /* CardIO in Resources */,
 				61E42D0D1BE423BC00C4C2E7 /* sc.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E42D131BE434FA00C4C2E7 /* loginViewController.m in Sources */,
 				61E42CD31BE41A4300C4C2E7 /* ViewController.m in Sources */,
 				61E42CD01BE41A4300C4C2E7 /* AppDelegate.m in Sources */,
 				61E42CCD1BE41A4300C4C2E7 /* main.m in Sources */,
@@ -419,6 +480,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fifty-fifty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fifty-fifty/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -430,6 +499,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fifty-fifty/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/fifty-fifty/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fiftyfifty.fifty-fifty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "loginViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:true];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    [NSThread sleepForTimeInterval:.2];
+    
+    
+    loginViewController *monitorMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"loginViewController"];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:monitorMenuViewController];
+
+    [self presentViewController:navigationController animated:NO completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
