@@ -166,7 +166,7 @@
                                     <action selector="learnMoreWebpage:" destination="DFm-8T-7PG" eventType="touchUpInside" id="jXj-Ga-DXR"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-ju-zdl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends: 0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-ju-zdl">
                                 <rect key="frame" x="16" y="403" width="240" height="34"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -180,7 +180,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends of friends:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n0j-J6-edQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends of friends: 0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n0j-J6-edQ">
                                 <rect key="frame" x="16" y="445" width="240" height="34"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -194,7 +194,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends of friends of friends:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eyr-Lh-M6e">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Friends of friends of friends: 0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Eyr-Lh-M6e">
                                 <rect key="frame" x="16" y="480" width="240" height="34"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -208,8 +208,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Credit: 0" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KS5-tF-YSA">
-                                <rect key="frame" x="108" y="229" width="104" height="32"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Credit: 0" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KS5-tF-YSA">
+                                <rect key="frame" x="78" y="229" width="160" height="32"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                     <bool key="isElement" value="NO"/>

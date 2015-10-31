@@ -53,14 +53,14 @@
     
     PFObject *userObject = [query findObjects][0];
     
-    int friendsOfFriendsofFriends = userObject[@"friendsOfFriendsofFriends"];
-    self.paid = userObject[@"paid"];
+    int friendsOfFriendsofFriends = [[userObject objectForKey:@"friendsOfFriendsofFriends"] intValue];
+    self.paid = [[userObject objectForKey:@"paid"] boolValue];
         
-    self.friendsOfFriendsofFriends=  userObject[@"friendsOfFriendsofFriends"];
-    self.friendsOfFriends = userObject[@"friendsOfFriends"];
-    self.friends = userObject[@"friends"];
-//    self.credit = userObject[@"credit"];
-    self.sourceId = userObject[@"sourceId"];
+    self.friendsOfFriendsofFriends=  [[userObject objectForKey:@"friendsOfFriendsofFriends"] intValue];
+    self.friendsOfFriends = [[userObject objectForKey:@"friendsOfFriends"] intValue];
+    self.friends = [[userObject objectForKey:@"friends"] intValue];
+    self.credit = [[userObject objectForKey:@"credit"] doubleValue];
+    self.sourceId = [[userObject objectForKey:@"sourceId"] stringValue];
     self.objectId = userObject.objectId;
         
     if(self.paid) {
@@ -68,7 +68,7 @@
         _refererId.text = [NSString stringWithFormat:@"%@%@", refId, self.objectId];
         [_registerBut setHidden:true];
         _getBut.enabled = YES;
-        _creditText.text = [NSString stringWithFormat:@"%@%d", @"Credit: ",self.credit];
+        _creditText.text = [NSString stringWithFormat:@"%@%f", @"Credit: ",self.credit];
         _FriendsText.text = [NSString stringWithFormat:@"%@%d", @"Friends: ",self.friends];
         _friendsOfFriendsText.text = [NSString stringWithFormat:@"%@%d", @"Friends of friends: ",self.friendsOfFriendsofFriends];
         _friendsOfFriendsOfFriendsText.text = [NSString stringWithFormat:@"%@%d", @"Friends of friends of friends: ",self.friendsOfFriendsofFriends];
